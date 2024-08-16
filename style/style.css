@@ -1,0 +1,263 @@
+/* Estilos CSS para os cards de produto e botões de quantidade */
+:root{
+    --primary-color: #ffbc0d;
+}
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ccc;
+}
+
+li{
+    list-style-type: none;
+}
+
+.logo img{
+    width: 70px;
+}
+
+header{
+    width: 100%;
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 10;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+header nav button{
+    border: none;
+    background: none;
+}
+
+header nav button img{
+    width: 20px;
+}
+
+.cart-and-profile{
+    display: flex;
+    align-items: center;
+}
+
+.info-profile p{
+    margin: auto;
+    font-weight: 500;
+}
+
+#profile{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.profile{
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 0 5px;
+    margin-top: 93px;
+    position: fixed;
+    right: -180px;
+    width: 180px;
+    transition: right 0.3s ease;
+    background-color: var(--primary-color);
+}
+
+#profile .profile li a,p{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+    cursor: pointer;
+}
+
+#profile .profile li:hover{
+    background-color: #ccc;
+}
+
+.width-fix{
+    width: calc(100% - 25%);
+    margin: 40px auto;
+} 
+
+main{
+    padding-top: 80px;
+}
+
+.product-container{
+    display: flex;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.product-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    max-width: 300px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.product-card img {
+    width: 260px;
+    height: 200px;
+    border-radius: 8px;
+    background-color: #ffbc0d;
+    padding: 5px;
+}
+
+.product-card h3{
+    font-size: 18px;
+    width: 260;
+}
+
+.product-card p{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.product-card button{
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.product-card button img{
+    width: 20px;
+    height: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.quantity-btn {
+    cursor: pointer;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 4px;
+}
+
+.quantity-value {
+    font-size: 18px;
+    margin: 0 8px;
+}
+
+.pagination {
+    margin: 16px 0;
+}
+
+.pagination button {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin: 0 4px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination button{
+    background-color: var(--primary-color);
+    color: black;
+}
+
+/* Estilos CSS para o modal de carrinho de produtos */
+
+.modal-cart{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+}
+
+.cart{
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 600px;
+    height: 570px;
+    margin: 100px auto;
+    padding: 10px;
+    transition: linear 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.my-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.my-cart img{
+    width: 20px;
+    cursor: pointer;
+}
+
+.card-selected-products{
+    padding: 10px;
+    max-height: 450px;
+    overflow-y: auto;
+}
+
+.card-selected-products h3{
+    color: #ccc;
+}
+
+.options{
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button{
+    border: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.options button img{
+    width: 13px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card img{
+    max-width: 120px;
+    height: auto;
+}
+
+
